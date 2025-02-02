@@ -24,8 +24,9 @@ public:
     vec.push_back(root->val);
     mp[level]=vec;
 }
-    vector<vector<int>> zigzagLevelOrder(TreeNode* root) {
-        
+    vector<vector<int>> zigzagLevelOrder(TreeNode* root) 
+{
+
         map<int,vector<int>> mp;
         vector<vector<int>> ans;
         traverse(root,0,mp);
@@ -43,14 +44,9 @@ public:
             {
                 for(int x:mp[i])
                     a.push_back(x);
-                // reverse(a.begin(),a.end());
                 ans.push_back(a);
             }
         }
         return ans;
-    }
-
-    
-
-        
+    }    
 };
