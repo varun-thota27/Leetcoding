@@ -3,6 +3,7 @@ public:
     int trap(vector<int>& v) {
        int n=v.size();
        int pre[n],suf[n];
+        
        pre[0]=v[0];
        suf[n-1]=v[n-1];
        for(int i=1;i<n;i++)
