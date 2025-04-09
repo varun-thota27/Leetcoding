@@ -3,13 +3,12 @@ public:
     string removeOccurrences(string s, string part) {
         
         int len=part.length();
-        string res="";
-
+        
         for(char x:s){
-            res.push_back(x);
-            if(res.length()>=len && res.substr(res.length()-len)==part)
-                res.erase(res.length()-len,len);
+            if(s.find(part)<s.length()){
+                s.erase(s.find(part),len);
+            }
         }
-        return res;
+        return s;
     }
 };
