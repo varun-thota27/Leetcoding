@@ -4,23 +4,25 @@ public:
         if (!head || !head->next)
          return head;
         
-        ListNode* temp = head->next;  
-        
-        ListNode* prev = nullptr;
-        while(head && head->next) 
-        {
-            ListNode* nextPair = head->next->next; 
-            ListNode* second = head->next; 
-            second->next = head;
-            head->next = nextPair;
+       ListNode* first=head, *second=head->next,*prev=NULL;
 
-            if (prev) 
-            prev->next = second;
-            
-            prev = head;
-            head = nextPair;
-        }
-        
-        return temp;
+       while(first && second){
+        ListNode* third=second->next;
+
+        second->next=first;
+        first->next=third;
+        if(prev)
+        prev->next=second;
+        else 
+        head=second;
+
+        prev=first;
+        first=third;
+        if(third)
+        second=third->next;
+        else
+        second=NULL;
+       }
+       return head;
     }
 };
