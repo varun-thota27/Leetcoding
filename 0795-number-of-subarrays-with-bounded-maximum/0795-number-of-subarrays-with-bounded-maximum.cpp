@@ -1,23 +1,27 @@
 class Solution {
 public:
     int numSubarrayBoundedMax(vector<int>& v, int left, int right) {
-        ios_base::sync_with_stdio(false);
-        cin.tie(NULL);
-        int n=v.size(),c=0,ans=0;
-        int prev=-1;
+        
+        int n=v.size(),c1=0,c2=0,cur=0;
+
         for(int i=0;i<n;i++)
         {
-            if(v[i]>right){
-                prev=i;
-                c=0;
-            }
-            else if(v[i]>=left){
-                c=i-prev;
-                ans+=c;
-            }
-            else 
-            ans+=c;
+            if(v[i]<=right)
+            cur++;
+            else
+            cur=0;
+
+            c1+=cur;
         }
-        return ans;
+        cur=0;
+        for(int i=0;i<n;i++){
+            if(v[i]<=left-1)
+            cur++;
+            else
+            cur=0;
+
+            c2+=cur;
+        }
+        return c1-c2;
     }
 };
