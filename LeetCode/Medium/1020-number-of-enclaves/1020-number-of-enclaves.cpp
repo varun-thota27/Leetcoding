@@ -23,19 +23,13 @@ public:
         int c=0;
         vector<vector<int>> vis(n,vector<int> (m,0));
 
-        for(int j=0;j<m;j++){
-            if(!vis[0][j] && v[0][j]==1)
-                dfs(0,j,vis,v);
-
-            if(!vis[n-1][j] && v[n-1][j]==1)
-                dfs(n-1,j,vis,v);
-        }
         for(int i=0;i<n;i++){
-            if(!vis[i][0] && v[i][0]==1)
-                dfs(i,0,vis,v);
-
-            if(!vis[i][m-1] && v[i][m-1]==1)
-                dfs(i,m-1,vis,v);
+            for(int j=0;j<m;j++){
+                if(i==0 || i==n-1 || j==0 || j==m-1){
+                    if(!vis[i][j] && v[i][j]==1)
+                        dfs(i,j,vis,v);
+                }
+            }
         }
         for(int i=0;i<n;i++){
             for(int j=0;j<m;j++){
