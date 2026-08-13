@@ -7,6 +7,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [0414-third-maximum-number](https://github.com/varun-thota27/Leetcode_Solutions_repo/tree/main/LeetCode/Easy/0414-third-maximum-number/) | Easy |
+| [0624-maximum-distance-in-arrays](https://github.com/varun-thota27/Leetcode_Solutions_repo/tree/main/LeetCode/Medium/0624-maximum-distance-in-arrays/) | Medium |
 | [3633-earliest-finish-time-for-land-and-water-rides-i](https://github.com/varun-thota27/Leetcode_Solutions_repo/tree/main/LeetCode/Easy/3633-earliest-finish-time-for-land-and-water-rides-i/) | Easy |
 | [3731-find-missing-elements](https://github.com/varun-thota27/Leetcode_Solutions_repo/tree/main/LeetCode/Easy/3731-find-missing-elements/) | Easy |
 ## Two Pointers
@@ -20,6 +21,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 ## Greedy
 | Problem Name | Difficulty |
 | ------- | ------- |
+| [0624-maximum-distance-in-arrays](https://github.com/varun-thota27/Leetcode_Solutions_repo/tree/main/LeetCode/Medium/0624-maximum-distance-in-arrays/) | Medium |
 | [3633-earliest-finish-time-for-land-and-water-rides-i](https://github.com/varun-thota27/Leetcode_Solutions_repo/tree/main/LeetCode/Easy/3633-earliest-finish-time-for-land-and-water-rides-i/) | Easy |
 ## Sorting
 | Problem Name | Difficulty |
